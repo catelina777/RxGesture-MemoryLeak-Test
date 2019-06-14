@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4087C10522B3FFFA008DEC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087C10422B3FFFA008DEC27 /* AppDelegate.swift */; };
+		4087C10C22B3FFFB008DEC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4087C10B22B3FFFB008DEC27 /* Assets.xcassets */; };
+		4087C10F22B3FFFB008DEC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4087C10D22B3FFFB008DEC27 /* LaunchScreen.storyboard */; };
+		4087C11A22B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087C11922B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestTests.swift */; };
+		4087C12522B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087C12422B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestUITests.swift */; };
+		40B2140722B400F90040EA9E /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2140622B400F90040EA9E /* Test1ViewController.swift */; };
+		40B2140922B401040040EA9E /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2140822B401040040EA9E /* Test2ViewController.swift */; };
+		40B2140B22B401120040EA9E /* Test1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B2140A22B401120040EA9E /* Test1ViewController.xib */; };
+		40B2140D22B4011C0040EA9E /* Test2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B2140C22B4011C0040EA9E /* Test2ViewController.xib */; };
+		40B2141122B407F10040EA9E /* TestImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2141022B407F10040EA9E /* TestImageView.swift */; };
+		A85AC652F61C14925AC6FB32 /* Pods_RxGesture_MemoryLeak_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFA7A03D0CBD8407A35769 /* Pods_RxGesture_MemoryLeak_TestTests.framework */; };
+		BAD6BBD514936D01B261BDCD /* Pods_RxGesture_MemoryLeak_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0586113E9FF83F457A6569C /* Pods_RxGesture_MemoryLeak_Test.framework */; };
+		E7A566C07457B87E2B3CEDD6 /* Pods_RxGesture_MemoryLeak_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECA341CF71B11278E32B8DF /* Pods_RxGesture_MemoryLeak_TestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4087C11622B3FFFB008DEC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4087C0F922B3FFFA008DEC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4087C10022B3FFFA008DEC27;
+			remoteInfo = "RxGesture-MemoryLeak-Test";
+		};
+		4087C12122B3FFFB008DEC27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4087C0F922B3FFFA008DEC27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4087C10022B3FFFA008DEC27;
+			remoteInfo = "RxGesture-MemoryLeak-Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EEFA7A03D0CBD8407A35769 /* Pods_RxGesture_MemoryLeak_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxGesture_MemoryLeak_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B613CB45E2BD4E820D90EB0 /* Pods-RxGesture-MemoryLeak-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGesture-MemoryLeak-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxGesture-MemoryLeak-TestUITests/Pods-RxGesture-MemoryLeak-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		21DF7FAEDE2B72A85DF050ED /* Pods-RxGesture-MemoryLeak-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGesture-MemoryLeak-TestTests.release.xcconfig"; path = "Target Support Files/Pods-RxGesture-MemoryLeak-TestTests/Pods-RxGesture-MemoryLeak-TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		4087C10122B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxGesture-MemoryLeak-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4087C10422B3FFFA008DEC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4087C10B22B3FFFB008DEC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4087C10E22B3FFFB008DEC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4087C11022B3FFFB008DEC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4087C11522B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxGesture-MemoryLeak-TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4087C11922B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGesture_MemoryLeak_TestTests.swift; sourceTree = "<group>"; };
+		4087C11B22B3FFFB008DEC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4087C12022B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxGesture-MemoryLeak-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4087C12422B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGesture_MemoryLeak_TestUITests.swift; sourceTree = "<group>"; };
+		4087C12622B3FFFB008DEC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B2140622B400F90040EA9E /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
+		40B2140822B401040040EA9E /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
+		40B2140A22B401120040EA9E /* Test1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test1ViewController.xib; sourceTree = "<group>"; };
+		40B2140C22B4011C0040EA9E /* Test2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Test2ViewController.xib; sourceTree = "<group>"; };
+		40B2141022B407F10040EA9E /* TestImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImageView.swift; sourceTree = "<group>"; };
+		4FC8B05B8147AAAC12ECB61E /* Pods-RxGesture-MemoryLeak-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGesture-MemoryLeak-TestUITests.release.xcconfig"; path = "Target Support Files/Pods-RxGesture-MemoryLeak-TestUITests/Pods-RxGesture-MemoryLeak-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89A67C57150B48DA4104AE66 /* Pods-RxGesture-MemoryLeak-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGesture-MemoryLeak-Test.release.xcconfig"; path = "Target Support Files/Pods-RxGesture-MemoryLeak-Test/Pods-RxGesture-MemoryLeak-Test.release.xcconfig"; sourceTree = "<group>"; };
+		B839D5D7287EE377EC5D4F50 /* Pods-RxGesture-MemoryLeak-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGesture-MemoryLeak-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-RxGesture-MemoryLeak-TestTests/Pods-RxGesture-MemoryLeak-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0586113E9FF83F457A6569C /* Pods_RxGesture_MemoryLeak_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxGesture_MemoryLeak_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4569DB4E36C79E9BF4F171 /* Pods-RxGesture-MemoryLeak-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGesture-MemoryLeak-Test.debug.xcconfig"; path = "Target Support Files/Pods-RxGesture-MemoryLeak-Test/Pods-RxGesture-MemoryLeak-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		EECA341CF71B11278E32B8DF /* Pods_RxGesture_MemoryLeak_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxGesture_MemoryLeak_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4087C0FE22B3FFFA008DEC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD6BBD514936D01B261BDCD /* Pods_RxGesture_MemoryLeak_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087C11222B3FFFB008DEC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85AC652F61C14925AC6FB32 /* Pods_RxGesture_MemoryLeak_TestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087C11D22B3FFFB008DEC27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A566C07457B87E2B3CEDD6 /* Pods_RxGesture_MemoryLeak_TestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4087C0F822B3FFFA008DEC27 = {
+			isa = PBXGroup;
+			children = (
+				4087C10322B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test */,
+				4087C11822B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests */,
+				4087C12322B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests */,
+				4087C10222B3FFFA008DEC27 /* Products */,
+				861D7669AC18DA5BF4398258 /* Pods */,
+				D0E9694914D2369CFC046125 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4087C10222B3FFFA008DEC27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4087C10122B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test.app */,
+				4087C11522B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests.xctest */,
+				4087C12022B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4087C10322B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test */ = {
+			isa = PBXGroup;
+			children = (
+				40B2140F22B4018F0040EA9E /* Config */,
+				40B2140E22B401760040EA9E /* Resource */,
+				4087C10422B3FFFA008DEC27 /* AppDelegate.swift */,
+				40B2140622B400F90040EA9E /* Test1ViewController.swift */,
+				40B2140A22B401120040EA9E /* Test1ViewController.xib */,
+				40B2140822B401040040EA9E /* Test2ViewController.swift */,
+				40B2140C22B4011C0040EA9E /* Test2ViewController.xib */,
+				40B2141022B407F10040EA9E /* TestImageView.swift */,
+			);
+			path = "RxGesture-MemoryLeak-Test";
+			sourceTree = "<group>";
+		};
+		4087C11822B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				4087C11922B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestTests.swift */,
+				4087C11B22B3FFFB008DEC27 /* Info.plist */,
+			);
+			path = "RxGesture-MemoryLeak-TestTests";
+			sourceTree = "<group>";
+		};
+		4087C12322B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4087C12422B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestUITests.swift */,
+				4087C12622B3FFFB008DEC27 /* Info.plist */,
+			);
+			path = "RxGesture-MemoryLeak-TestUITests";
+			sourceTree = "<group>";
+		};
+		40B2140E22B401760040EA9E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4087C10D22B3FFFB008DEC27 /* LaunchScreen.storyboard */,
+				4087C10B22B3FFFB008DEC27 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		40B2140F22B4018F0040EA9E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4087C11022B3FFFB008DEC27 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		861D7669AC18DA5BF4398258 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA4569DB4E36C79E9BF4F171 /* Pods-RxGesture-MemoryLeak-Test.debug.xcconfig */,
+				89A67C57150B48DA4104AE66 /* Pods-RxGesture-MemoryLeak-Test.release.xcconfig */,
+				B839D5D7287EE377EC5D4F50 /* Pods-RxGesture-MemoryLeak-TestTests.debug.xcconfig */,
+				21DF7FAEDE2B72A85DF050ED /* Pods-RxGesture-MemoryLeak-TestTests.release.xcconfig */,
+				1B613CB45E2BD4E820D90EB0 /* Pods-RxGesture-MemoryLeak-TestUITests.debug.xcconfig */,
+				4FC8B05B8147AAAC12ECB61E /* Pods-RxGesture-MemoryLeak-TestUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0E9694914D2369CFC046125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0586113E9FF83F457A6569C /* Pods_RxGesture_MemoryLeak_Test.framework */,
+				0EEFA7A03D0CBD8407A35769 /* Pods_RxGesture_MemoryLeak_TestTests.framework */,
+				EECA341CF71B11278E32B8DF /* Pods_RxGesture_MemoryLeak_TestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4087C10022B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4087C12922B3FFFB008DEC27 /* Build configuration list for PBXNativeTarget "RxGesture-MemoryLeak-Test" */;
+			buildPhases = (
+				E59FBFCB5A79B4189167E059 /* [CP] Check Pods Manifest.lock */,
+				4087C0FD22B3FFFA008DEC27 /* Sources */,
+				4087C0FE22B3FFFA008DEC27 /* Frameworks */,
+				4087C0FF22B3FFFA008DEC27 /* Resources */,
+				F1FFB5D9B9A656967B1639F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxGesture-MemoryLeak-Test";
+			productName = "RxGesture-MemoryLeak-Test";
+			productReference = 4087C10122B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4087C11422B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4087C12C22B3FFFB008DEC27 /* Build configuration list for PBXNativeTarget "RxGesture-MemoryLeak-TestTests" */;
+			buildPhases = (
+				BD96436CB253C4668608BE0A /* [CP] Check Pods Manifest.lock */,
+				4087C11122B3FFFB008DEC27 /* Sources */,
+				4087C11222B3FFFB008DEC27 /* Frameworks */,
+				4087C11322B3FFFB008DEC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4087C11722B3FFFB008DEC27 /* PBXTargetDependency */,
+			);
+			name = "RxGesture-MemoryLeak-TestTests";
+			productName = "RxGesture-MemoryLeak-TestTests";
+			productReference = 4087C11522B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4087C11F22B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4087C12F22B3FFFB008DEC27 /* Build configuration list for PBXNativeTarget "RxGesture-MemoryLeak-TestUITests" */;
+			buildPhases = (
+				88C5668734E3E12F1C56E63A /* [CP] Check Pods Manifest.lock */,
+				4087C11C22B3FFFB008DEC27 /* Sources */,
+				4087C11D22B3FFFB008DEC27 /* Frameworks */,
+				4087C11E22B3FFFB008DEC27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4087C12222B3FFFB008DEC27 /* PBXTargetDependency */,
+			);
+			name = "RxGesture-MemoryLeak-TestUITests";
+			productName = "RxGesture-MemoryLeak-TestUITests";
+			productReference = 4087C12022B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4087C0F922B3FFFA008DEC27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = catelina777;
+				TargetAttributes = {
+					4087C10022B3FFFA008DEC27 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					4087C11422B3FFFB008DEC27 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4087C10022B3FFFA008DEC27;
+					};
+					4087C11F22B3FFFB008DEC27 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 4087C10022B3FFFA008DEC27;
+					};
+				};
+			};
+			buildConfigurationList = 4087C0FC22B3FFFA008DEC27 /* Build configuration list for PBXProject "RxGesture-MemoryLeak-Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4087C0F822B3FFFA008DEC27;
+			productRefGroup = 4087C10222B3FFFA008DEC27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4087C10022B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test */,
+				4087C11422B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestTests */,
+				4087C11F22B3FFFB008DEC27 /* RxGesture-MemoryLeak-TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4087C0FF22B3FFFA008DEC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B2140D22B4011C0040EA9E /* Test2ViewController.xib in Resources */,
+				40B2140B22B401120040EA9E /* Test1ViewController.xib in Resources */,
+				4087C10F22B3FFFB008DEC27 /* LaunchScreen.storyboard in Resources */,
+				4087C10C22B3FFFB008DEC27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087C11322B3FFFB008DEC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087C11E22B3FFFB008DEC27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88C5668734E3E12F1C56E63A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxGesture-MemoryLeak-TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD96436CB253C4668608BE0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxGesture-MemoryLeak-TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E59FBFCB5A79B4189167E059 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxGesture-MemoryLeak-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FFB5D9B9A656967B1639F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxGesture-MemoryLeak-Test/Pods-RxGesture-MemoryLeak-Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxGesture-MemoryLeak-Test/Pods-RxGesture-MemoryLeak-Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxGesture-MemoryLeak-Test/Pods-RxGesture-MemoryLeak-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4087C0FD22B3FFFA008DEC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B2141122B407F10040EA9E /* TestImageView.swift in Sources */,
+				40B2140722B400F90040EA9E /* Test1ViewController.swift in Sources */,
+				40B2140922B401040040EA9E /* Test2ViewController.swift in Sources */,
+				4087C10522B3FFFA008DEC27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087C11122B3FFFB008DEC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4087C11A22B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087C11C22B3FFFB008DEC27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4087C12522B3FFFB008DEC27 /* RxGesture_MemoryLeak_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4087C11722B3FFFB008DEC27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4087C10022B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test */;
+			targetProxy = 4087C11622B3FFFB008DEC27 /* PBXContainerItemProxy */;
+		};
+		4087C12222B3FFFB008DEC27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4087C10022B3FFFA008DEC27 /* RxGesture-MemoryLeak-Test */;
+			targetProxy = 4087C12122B3FFFB008DEC27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4087C10D22B3FFFB008DEC27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4087C10E22B3FFFB008DEC27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4087C12722B3FFFB008DEC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4087C12822B3FFFB008DEC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4087C12A22B3FFFB008DEC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4569DB4E36C79E9BF4F171 /* Pods-RxGesture-MemoryLeak-Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RxGesture-MemoryLeak-Test/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.catelina777.RxGesture-MemoryLeak-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4087C12B22B3FFFB008DEC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A67C57150B48DA4104AE66 /* Pods-RxGesture-MemoryLeak-Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RxGesture-MemoryLeak-Test/Config/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.catelina777.RxGesture-MemoryLeak-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4087C12D22B3FFFB008DEC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B839D5D7287EE377EC5D4F50 /* Pods-RxGesture-MemoryLeak-TestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RxGesture-MemoryLeak-TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.catelina777.RxGesture-MemoryLeak-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxGesture-MemoryLeak-Test.app/RxGesture-MemoryLeak-Test";
+			};
+			name = Debug;
+		};
+		4087C12E22B3FFFB008DEC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DF7FAEDE2B72A85DF050ED /* Pods-RxGesture-MemoryLeak-TestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RxGesture-MemoryLeak-TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.catelina777.RxGesture-MemoryLeak-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxGesture-MemoryLeak-Test.app/RxGesture-MemoryLeak-Test";
+			};
+			name = Release;
+		};
+		4087C13022B3FFFB008DEC27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B613CB45E2BD4E820D90EB0 /* Pods-RxGesture-MemoryLeak-TestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RxGesture-MemoryLeak-TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.catelina777.RxGesture-MemoryLeak-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RxGesture-MemoryLeak-Test";
+			};
+			name = Debug;
+		};
+		4087C13122B3FFFB008DEC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC8B05B8147AAAC12ECB61E /* Pods-RxGesture-MemoryLeak-TestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RxGesture-MemoryLeak-TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.catelina777.RxGesture-MemoryLeak-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RxGesture-MemoryLeak-Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4087C0FC22B3FFFA008DEC27 /* Build configuration list for PBXProject "RxGesture-MemoryLeak-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4087C12722B3FFFB008DEC27 /* Debug */,
+				4087C12822B3FFFB008DEC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4087C12922B3FFFB008DEC27 /* Build configuration list for PBXNativeTarget "RxGesture-MemoryLeak-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4087C12A22B3FFFB008DEC27 /* Debug */,
+				4087C12B22B3FFFB008DEC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4087C12C22B3FFFB008DEC27 /* Build configuration list for PBXNativeTarget "RxGesture-MemoryLeak-TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4087C12D22B3FFFB008DEC27 /* Debug */,
+				4087C12E22B3FFFB008DEC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4087C12F22B3FFFB008DEC27 /* Build configuration list for PBXNativeTarget "RxGesture-MemoryLeak-TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4087C13022B3FFFB008DEC27 /* Debug */,
+				4087C13122B3FFFB008DEC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4087C0F922B3FFFA008DEC27 /* Project object */;
+}
