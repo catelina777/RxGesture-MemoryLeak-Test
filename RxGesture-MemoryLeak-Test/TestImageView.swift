@@ -50,7 +50,7 @@ final class TestImageView: UIImageView {
          .asDriver()
          .skip(1)
          .drive(onNext: { recognizer in
-         self.gestureRecognizers = [recognizer]
+            self.gestureRecognizers = [recognizer]
          })
          .disposed(by: disposeBag)
     }
