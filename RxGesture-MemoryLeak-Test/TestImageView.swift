@@ -44,6 +44,17 @@ final class TestImageView: UIImageView {
             .disposed(by: disposeBag)
     }
 
+    func causeCircularReferences() {
+        // 🚨 This code causes circular references
+         rx.pinchGesture()
+         .asDriver()
+         .skip(1)
+         .drive(onNext: { recognizer in
+         self.gestureRecognizers = [recognizer]
+         })
+         .disposed(by: disposeBag)
+    }
+
     deinit {
         print("🧹🧹🧹 release TestImageView 🧹🧹🧹")
     }

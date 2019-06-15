@@ -29,8 +29,14 @@ final class Test1ViewController: UIViewController {
         // Subscribe on child view
         imageView.subscribe()
 
+        // Subscribe on child view and cause circular references
+        // imageView.causeCircularReferences()
+
         // Subscribe on super view
         subscribeOnSuperView()
+
+        // Subscribe on super view and cause circular references
+        // causeCircularReferences()
     }
 
     deinit {
@@ -76,6 +82,17 @@ final class Test1ViewController: UIViewController {
         imageView.rx.pinchGesture()
             .skip(1)
             .bind(to: setRecognizer)
+            .disposed(by: disposeBag)
+    }
+
+    /// 🚨 This code causes circular references
+    private func causeCircularReferences() {
+        imageView.rx.pinchGesture()
+            .asDriver()
+            .skip(1)
+            .drive(onNext: { recognizer in
+                self.imageView.gestureRecognizers = [recognizer]
+            })
             .disposed(by: disposeBag)
     }
 }
