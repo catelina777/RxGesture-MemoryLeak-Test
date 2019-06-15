@@ -13,38 +13,24 @@ import RxGesture
 
 final class Test1ViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: TestImageView!
+    @IBOutlet weak var popButton: UIButton!
 
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        imageView.rx.pinchGesture()
-            .asDriver()
-            .skip(1)
-            .drive(onNext: { [unowned self] recognizer in
-                self.imageView.gestureRecognizers = [recognizer]
-            })
+        // prepare for transition
+        popButton.rx.tap
+            .bind(to: pop)
             .disposed(by: disposeBag)
 
+        // Subscribe on child view
+        imageView.subscribe()
 
-        /// Avoid circular references using weak self
-        imageView.rx.pinchGesture()
-            .asDriver()
-            .skip(1)
-            .drive(onNext: { [weak self] recognizer in
-                guard let me = self else { return }
-                me.imageView.gestureRecognizers = [recognizer]
-            })
-            .disposed(by: disposeBag)
-
-
-        /// Avoid circular references using Binder
-        imageView.rx.pinchGesture()
-            .skip(1)
-            .bind(to: setRecognizer)
-            .disposed(by: disposeBag)
+        // Subscribe on super view
+        subscribeOnSuperView()
     }
 
     deinit {
@@ -55,5 +41,41 @@ final class Test1ViewController: UIViewController {
         return Binder(self) { me, recognizer in
             me.imageView.gestureRecognizers = [recognizer]
         }
+    }
+
+    var pop: Binder<Void> {
+        return Binder(self) { me, _ in
+            me.navigationController?.popViewController(animated: true)
+        }
+    }
+
+    private func subscribeOnSuperView() {
+        print("subscribe on superview")
+        // This code is said to have a problem
+        imageView.rx.pinchGesture()
+            .asDriver()
+            .skip(1)
+            .drive(onNext: { [unowned self] recognizer in
+                self.imageView.gestureRecognizers = [recognizer]
+            })
+            .disposed(by: disposeBag)
+
+
+        // Avoid circular references using weak self
+        imageView.rx.pinchGesture()
+            .asDriver()
+            .skip(1)
+            .drive(onNext: { [weak self] recognizer in
+                guard let me = self else { return }
+                me.imageView.gestureRecognizers = [recognizer]
+            })
+            .disposed(by: disposeBag)
+
+
+        // Avoid circular references using Binder
+        imageView.rx.pinchGesture()
+            .skip(1)
+            .bind(to: setRecognizer)
+            .disposed(by: disposeBag)
     }
 }

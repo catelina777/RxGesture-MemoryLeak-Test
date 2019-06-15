@@ -15,8 +15,10 @@ final class TestImageView: UIImageView {
 
     private let disposeBag = DisposeBag()
 
-    func configure() {
-        /// This code is said to have a problem
+    func subscribe() {
+        print("subscribe on child view")
+        
+        // This code is said to have a problem
         rx.pinchGesture()
             .asDriver()
             .skip(1)
@@ -25,7 +27,7 @@ final class TestImageView: UIImageView {
             })
             .disposed(by: disposeBag)
 
-        /// Avoid circular references using weak self
+        // Avoid circular references using weak self
         rx.pinchGesture()
             .asDriver()
             .skip(1)
@@ -35,7 +37,7 @@ final class TestImageView: UIImageView {
             })
             .disposed(by: disposeBag)
 
-        /// Avoid circular references using Binder
+        // Avoid circular references using Binder
         rx.pinchGesture()
             .skip(1)
             .bind(to: setRecognizer)
